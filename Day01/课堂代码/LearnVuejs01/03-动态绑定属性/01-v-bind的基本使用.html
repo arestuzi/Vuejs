@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <div id="app">
+<!--    <img src="{{imgURL}}" alt="">-->
+    <img v-bind:src="imgURL" alt="">
+    <a v-bind:href="webURL">百度一下</a>
+  </div>
+
+  <script src="../js/vue.js"></script>
+  <script>
+    const app = new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello',
+        imgURL: 'https://cn.vuejs.org/images/logo.svg',
+        webURL: 'https:www.baidu.com'
+      }
+    })
+  </script>
+</body>
+</html>
